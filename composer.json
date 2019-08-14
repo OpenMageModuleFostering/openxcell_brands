@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Openxcell_Brands",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Brand slider gives dynamic access to admin to add/update/delete brands with their logo from admin which displays on frontend.",
+    "authors": [
+    {
+        "name": "Jayneel",
+        "email": "jayneel@openxcell.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

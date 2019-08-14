@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Openxcell_Brands</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Brand slider gives dynamic access to admin to add/update/delete brands with their logo from admin which displays on frontend.</summary>
+    <description>Brand slider is a free Magento Extension developed by penxcell Technolabs PVT LTD with a purpose to help website admins to add and display the brands included in the store. Admin can easily add/update delete brands from admin interface with a facility to add Logo of brand, URL of brand and title of brand.&#xD;
+&#xD;
+The added brands will be displayed in the frontend with link to added URLs.</description>
+    <notes>First stable release</notes>
+    <authors><author><name>Jayneel</name><user>jayneel</user><email>jayneel@openxcell.com</email></author><author><name>Manthan</name><user>manthankvora</user><email>manthan@openxcelltechnolabs.com</email></author></authors>
+    <date>2013-12-06</date>
+    <time>05:45:34</time>
+    <contents><target name="magelocal"><dir name="Openxcell"><dir name="Brands"><dir name="Block"><dir name="Adminhtml"><dir name="Brands"><dir name="Edit"><file name="Form.php" hash="26e1474b1c4177465afcb032bc5c39d0"/><dir name="Tab"><file name="Form.php" hash="670ce022e51a724b04f8fc5247109b1b"/></dir><file name="Tabs.php" hash="ec95f9724f0b2555ebc73314b40d156f"/></dir><file name="Edit.php" hash="543d028cc8d5080de1038a14cdefe50c"/><file name="Grid.php" hash="56ccb5a08a7df13fa9d2a7b7236333d8"/></dir><file name="Brands.php" hash="598587fb1977b8735dc716889fc04cbc"/></dir><file name="Brands.php" hash="f574d253bc71f06566616b50ca3008ee"/></dir><dir name="Helper"><file name="Data.php" hash="21789fa392f6d4f7546eb02972edd08f"/></dir><dir name="Model"><file name="Brands.php" hash="ed8b9e7bb350c593cfe8f2bb086bd685"/><dir name="Mysql4"><dir name="Brands"><file name="Collection.php" hash="66601210e2d512ff734ecf216b460fdf"/></dir><file name="Brands.php" hash="59310e1b2a5929e500eccadbac0e0c9b"/></dir><file name="Options.php" hash="a5591b24e4cc02942313ea76e9d142f6"/><file name="Status.php" hash="ce6f9633649613168dd018ff52db61d8"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="BrandsController.php" hash="e96b4c50e2272523d084cc3df1c1650d"/></dir><file name="IndexController.php" hash="ca0a1d6306dfc47a3a465108a79d5b29"/></dir><dir name="etc"><file name="config.xml" hash="23eb0192f0188ea9823bbfe7cf504141"/><file name="system.xml" hash="b81ae627c5b627c58759d1c96865a1f8"/></dir><dir name="sql"><dir name="brands_setup"><file name="mysql4-install-0.1.0.php" hash="9b071e6f3b56d5049a478bd1a8f2890e"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="brands.xml" hash="7b4e1f7de8feaed7de47c608a7f8a954"/></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="brands.xml" hash="5da244c359b5aa1302359490705b661f"/></dir><dir name="template"><dir name="brands"><file name="brands.phtml" hash="7f6ca446b445b42e6deeb5e74ac8af60"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Openxcell_Brands.xml" hash="6fc278f3d658e480d2a867c038edc939"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><file name="blueberry.css" hash="6c332fd9a46c6d06fffd43b20d6a4bbe"/></dir><dir name="js"><file name="jquery.blueberry.js" hash="d3badded66f59c016de81c2d72338cc3"/><file name="jquery.js" hash="e0e0559014b222245deb26b6ae8bd940"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

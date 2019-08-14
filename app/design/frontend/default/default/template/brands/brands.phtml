@@ -1,0 +1,47 @@
+<?php
+/*author : Manthan Vora<manthan@openxcelltechnolabs.com>*/
+?>
+<script>
+jQuery.noConflict();
+jQuery(window).load(function() {
+    jQuery('.blueberry').blueberry();
+});
+</script>
+<style type="text/css">
+.blueberry .pager{display:none;}
+</style>
+<div class="block block-list block-compare">
+<div class="block-title">
+    <strong><span>Our Brands</span></strong>
+</div>
+<div class="block-content">
+<div id="doc">
+  <div id="content">
+    <div class="blueberry">
+<ul class="slides">
+<?php
+//DebugBreak();
+$height = Mage::getStoreConfig('brands/frontend/brand_height');
+$width = Mage::getStoreConfig('brands/frontend/brand_width');
+if(!$height){
+    $height = 100;
+}
+if($width){
+    $width = 140;
+}
+$brands = Mage::getModel('brands/brands')->getCollection();
+foreach($brands as $brand){
+    if($brand->getData('status') == 1){
+    ?>
+    
+    <li><a href="<?php echo $brand->getData('brand_url'); ?>" target="__blank"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$brand->getData('filename'); ?>" alt="<?php echo $brand->getData('title'); ?>" title="<?php echo $brand->getData('title'); ?>" height="<?php echo $height; ?>" width="<?php echo $width; ?>"/></a></li>
+    <?php }
+}
+
+?>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>

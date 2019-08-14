@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Openxcell_Brands>
+            <version>0.1.0</version>
+        </Openxcell_Brands>
+    </modules>
+    <frontend>
+        <routers>
+            <brands>
+                <use>standard</use>
+                <args>
+                    <module>Openxcell_Brands</module>
+                    <frontName>brands</frontName>
+                </args>
+            </brands>
+        </routers>
+        <layout>
+            <updates>
+                <brands>
+                    <file>brands.xml</file>
+                </brands>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<brands>
+				<use>admin</use>
+				<args>
+					<module>Openxcell_Brands</module>
+					<frontName>brands</frontName>
+				</args>
+			</brands>
+        </routers>
+    </admin>
+    <!--<adminhtml>
+		<menu>
+			<brands module="brands">
+				<title>Brands</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<Brands module="brands">
+						<title>Manage Brands</title>
+						<sort_order>0</sort_order>
+						<action>brands/adminhtml_brands</action>
+					</Brands>
+                </children>
+			</brands>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<brands>
+							<title>Brands Module</title>
+							<sort_order>10</sort_order>
+						</brands>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<brands>
+					<file>brands.xml</file>
+				</brands>
+			</updates>
+		</layout>
+    </adminhtml>-->   
+    
+    
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>  <!--This is acl based on URL. If you see URL it would be /admin/system_config/ -->
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                            <brands translate="title" module="brands">  <!-- This is name of the section created by us -->
+                                                <title>Brands Module</title>  <!-- Title as shown in User->Roles->Permissions Window -->
+                                                <sort_order>10</sort_order>
+                                            </brands>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <menu>
+            <brands module="brands">
+                <title>Brands</title>
+                <sort_order>71</sort_order>               
+                <children>
+                    <Brands module="brands">
+                        <title>Manage Brands</title>
+                        <sort_order>0</sort_order>
+                        <action>brands/adminhtml_brands</action>
+                    </Brands>
+                </children>
+            </brands>
+        </menu>
+        <layout>
+            <updates>
+                <brands>
+                    <file>brands.xml</file>
+                </brands>
+            </updates>
+        </layout>
+    </adminhtml>
+    
+    
+    
+    <global>
+        <models>
+            <brands>
+                <class>Openxcell_Brands_Model</class>
+                <resourceModel>brands_mysql4</resourceModel>
+            </brands>
+            <brands_mysql4>
+                <class>Openxcell_Brands_Model_Mysql4</class>
+                <entities>
+                    <brands>
+                        <table>brands</table>
+                    </brands>
+                </entities>
+            </brands_mysql4>
+        </models>
+        <resources>
+            <brands_setup>
+                <setup>
+                    <module>Openxcell_Brands</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </brands_setup>
+            <brands_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </brands_write>
+            <brands_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </brands_read>
+        </resources>
+        <blocks>
+            <brands>
+                <class>Openxcell_Brands_Block</class>
+            </brands>
+        </blocks>
+        <helpers>
+            <brands>
+                <class>Openxcell_Brands_Helper</class>
+            </brands>
+        </helpers>
+    </global>
+</config>

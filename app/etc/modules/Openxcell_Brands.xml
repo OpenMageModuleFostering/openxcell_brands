@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Openxcell_Brands>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Openxcell_Brands>
+    </modules>
+</config> 
