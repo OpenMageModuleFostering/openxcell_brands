@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Brand slider gives dynamic access to admin to add/update/delete brands with their logo from admin which displays on frontend.
